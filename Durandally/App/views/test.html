@@ -1,0 +1,6 @@
+﻿<div>
+  <select data-bind="options: MktsAndFacs, optionsText: 'Market', optionsCaption: 'Please select...', value: selectedMarket" />
+  <select data-bind="options: selectedMarket().Facilities, optionsCaption: 'Please select...', value: selectedFacility" />
+  <br /><br />
+  <div data-bind="text: ko.toJSON($data)"></div>
+</div>
